@@ -23,7 +23,7 @@
             },
             type: {
                 validator(value) {
-                    return ['primary', 'danger', 'warning', 'hollow', 'disabled'].indexOf(value) > -1;
+                    return ['primary', 'blue', 'danger', 'warning', 'hollow', 'disabled'].indexOf(value) > -1;
                 },
                 default: 'primary'
             },

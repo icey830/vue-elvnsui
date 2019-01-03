@@ -1,17 +1,17 @@
 <p align="center">
     <br>
     <a href="http://vue.ydui.org">
-        <img width="200" src="http://static.ydcss.com/ydui/img/logo.png">
+        <img width="200" src="http://qncdn.elvns.com/vueui/logo.png">
     </a>
     <br>
 </p>
 <br/>
 
-#### 一只基于Vue2.x的移动端&微信UI。 -YDUI Touch
+#### 一只基于Vue2.x的移动端&微信UI。 -EVVUI Touch
 
-Home: <a href="http://vue.ydui.org"> http://vue.ydui.org </a>  
-Docs: <a href="http://vue.ydui.org/docs"> http://vue.ydui.org/docs </a>  
-Blog: <a href="http://www.ydcss.com"> http://www.ydcss.com </a>  
+Home: <a href="https://icey830.github.io/vue-elvnsui/"> https://icey830.github.io/vue-elvnsui/ </a>  
+Docs: <a href="http://vue.ydui.org/docs"> http://vue.elvns.cn/docs </a>  
+Blog: <a href="http://www.ydcss.com"> http://www.elvns.com </a>  
 
 #### 请用扫码查看
 <img width="180" height="180" src="http://static.ydcss.com/ydui/img/qrcode.jpg" />

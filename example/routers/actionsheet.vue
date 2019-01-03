@@ -4,12 +4,14 @@
         <yd-button-group>
             <yd-button @click.native="show1 = true" size="large">带取消</yd-button>
             <yd-button @click.native="show2 = true" size="large" type="warning">不带取消</yd-button>
+            <yd-button @click.native="show3 = true" size="large" type="blue">NEW BTN 3</yd-button>
         </yd-button-group>
 
         <yd-actionsheet :items="myItems1" v-model="show1" cancel="取消"></yd-actionsheet>
 
         <yd-actionsheet :items="myItems2" v-model="show2"></yd-actionsheet>
 
+        <yd-actionsheet :items="myItems3" v-model="show3"></yd-actionsheet>
     </yd-layout>
 </template>
 
@@ -19,6 +21,7 @@
             return {
                 show1: false,
                 show2: false,
+                show3: false,
                 myItems1: [
                     {
                         label: '拍照',
@@ -35,6 +38,23 @@
                     }
                 ],
                 myItems2: [
+                    {
+                        label: '示例菜单一 - 我是不会关闭的',
+                        callback: () => {
+                            this.$dialog.toast({mes: 'Say: 我是不会关闭的！', timeout: 1000});
+                        },
+                        stay: true // 不关闭
+                    },
+                    {
+                        label: '示例菜单二 - 自动关闭',
+                        callback: () => {
+                            this.$dialog.toast({mes: 'Say: 我关闭啦啦啦！', timeout: 1000});
+                        }
+                    },
+                    {label: '示例菜单三 - 自动关闭'},
+                    {label: '示例菜单四 - 自动关闭'}
+                ],
+                myItems3: [
                     {
                         label: '示例菜单一 - 我是不会关闭的',
                         callback: () => {
