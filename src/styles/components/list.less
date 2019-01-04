@@ -164,6 +164,28 @@
       }
     }
   }
+
+
+&-list-theme6 {
+  background-color: #FFF;
+  .@{css-prefix}-list-item {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: .2rem .2rem 0 .2rem;
+    &:after {
+      .bottom-line(@line-color);
+    }
+    .@{css-prefix}-list {
+      &-mes {
+        padding: .2rem 0 .15rem;
+      }
+      &-other {
+        padding-top: .06rem;
+      }
+    }
+  }
+}
 }
 
 @media screen and (min-width: 768px) {
