@@ -69,7 +69,7 @@
             },
             checkAll() {
                 this.isCheckAll = !this.isCheckAll;
-                this.$refs.checklistDemo.$emit('ydui.checklist.checkall', this.isCheckAll);
+                this.$refs.checklistDemo.$emit('elvnsui.checklist.checkall', this.isCheckAll);
             }
         }
     }

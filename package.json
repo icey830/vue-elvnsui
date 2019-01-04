@@ -1,10 +1,10 @@
 {
-  "name": "vue-ydui",
+  "name": "elvnsui",
   "description": "A mobile components Library with Vue2.js.",
   "version": "1.0.0",
   "author": "elvns.com",
-  "main": "dist/ydui.rem.js",
-  "style": "dist/ydui.rem.css",
+  "main": "dist/elvnsui.rem.js",
+  "style": "dist/elvnsui.rem.css",
   "keywords": [
     "Elvns-UI Touch",
     "ui",
@@ -26,7 +26,7 @@
   "homepage": "https://icey830.github.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/icey830/vue-elvnsui.git"
+    "url": "https://github.com/icey830/elvnsui.git"
   },
   "scripts": {
     "dev": "webpack-dev-server --content-base example/ --port 4321 --inline --hot --host 0.0.0.0 --config build/webpack.dev.conf.js",

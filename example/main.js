@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Resource from 'vue-resource';
 
-import YDUI from '../src/ydui.js';
+import ELVNSUI from '../src/elvnsui.js';
 
 import Index from './routers/index.vue';
 import Button from './routers/button.vue';
@@ -49,12 +49,13 @@ import CheckList from './routers/checklist.vue';
 import Search from './routers/search.vue';
 import ScrollNav from './routers/scrollnav.vue';
 import Preview from './routers/preview.vue';
+import Demos from './routers/demos.vue';
 
 import App from './app.vue';
 
 Vue.use(VueRouter);
 Vue.use(Resource);
-Vue.use(YDUI);
+Vue.use(ELVNSUI);
 
 const router = new VueRouter({
     routes: [
@@ -104,6 +105,7 @@ const router = new VueRouter({
         {path: '/search', name: 'search', component: Search},
         {path: '/scrollnav', name: 'scrollnav', component: ScrollNav},
         {path: '/preview', name: 'preview', component: Preview},
+        {path: '/demos', name: 'demos', component: Demos},
     ]
 });
 
@@ -118,7 +120,7 @@ router.beforeEach((route, redirect, next) => {
     if (redirect.path === '/') {
         scrollTop = document.getElementById('scrollView').scrollTop;
     }
-    document.title = 'YDUI Touch - ' + route.name;
+    document.title = 'Elvnsui Touch - ' + route.name;
     next();
 });
 
